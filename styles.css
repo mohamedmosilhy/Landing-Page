@@ -20,12 +20,9 @@ body {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
+  max-width: 100rem;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 @media (min-width: 576px) {
@@ -72,7 +69,6 @@ body {
 .first-section {
   display: flex;
   flex-direction: column;
-  gap: 70px;
   background-color: var(--color-back-first-sec);
 }
 
@@ -114,6 +110,7 @@ a {
   color: var(--text-color);
   font-size: 18px;
   gap: 10%;
+  padding: 70px 0;
 }
 
 .main-text {
@@ -138,7 +135,7 @@ button {
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 8px;
 }
 
@@ -148,3 +145,97 @@ button {
   padding: 16px;
 }
 /* first section End */
+
+/* second section start */
+.second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 30px;
+  background-color: white;
+  gap: 40px;
+}
+
+.second-section .heading {
+  color: var(--color-back-first-sec);
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.img-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.img-text .img2 {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex: 1;
+}
+
+.second-section .second-section-content {
+  display: flex;
+  color: #1f2937;
+  justify-content: center;
+  align-items: center;
+}
+/* second section end */
+
+.third-section {
+  color: var(--color-back-first-sec);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+  gap: 20px;
+}
+
+.quote {
+  width: 80%;
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+  font-weight: 200;
+}
+
+.quote-author {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.fourth-section {
+  padding: 70px 0;
+}
+
+.blue-box {
+  display: flex;
+  background-color: var(--button-color);
+  padding: 36px;
+  justify-content: space-around;
+  align-items: end;
+  gap: 10%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.fourth-section-button {
+  border: 2px solid white;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
